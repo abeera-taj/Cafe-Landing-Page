@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+*::selection{
+color: #fff;
+background-color: rgb(59, 27, 4);
+}
+nav{
+    background-color: rgb(167, 83, 23);
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s ease;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+   }
+nav ul li {
+    display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Quicksand';
+}
+nav ul li a:hover{
+    opacity: 0.5;
+}
+nav ul li:hover{
+    text-decoration: underline;
+}
+@media (max-width:952px){
+   nav ul li a{
+font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+ display: block;
+     }
+     ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(245, 223, 190);
+        top: 80px;
+        left: -100px;
+        text-align: center;
+        transition: all 0.5s;
+     }
+     nav ul li{
+        display: block;
+        /* line-height: 30px; */
+     }
+     nav ul li a{
+        font-size: 20px;
+     }
+     a:hover{
+        background: none;
+        text-decoration: underline;
+     }
+     #check:checked ~ ul{
+        left: 0;
+     }
+     section{
+        background:url("./cof-bg2.jpeg") no-repeat;
+        background-size: cover;
+        height: clac(100vh - 80px);
+     }
+ }
+ /* CSS of SECOND */
+
+ .second{
+    background-image: url("./cof-bg0.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 160px; */
+ }
+ .second h1, p, button{
+    margin-left: 160px;
+    /* font-family: 'Julius Sans One'; */
+    
+
+ }
+.second button{
+    width: 200px;
+height: 50px;
+color: #fff;
+background-color: saddlebrown;
+border: 1px solid saddlebrown;
+border-radius: 40px;
+}
+.second button:hover{
+    background-color: rgb(183, 95, 32);
+}
+
+/* THIRD SECTION CSS */
+.subscript{
+    background-color: #fff;
+}
+.subscript h1:hover{
+    text-decoration: underline;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.icons li i{
+    font-size: 30px;
+    /* color:rgb(65, 31, 7); */
+    color: saddlebrown;
+}
+.head{
+transition: all 0.5s ease;
+
+}
+.head:hover{
+opacity: 0.7;
+}
+.icons li i:hover{
+    color: rgb(183, 95, 32);
+}
+.flavors ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.flavors ul li{
+    transition: all 0.5s ease;
+    font-size: 20px;
+    color: rgb(72, 32, 3);
+    line-break: 20px;
+}
+.flavors ul li:hover{
+    text-decoration: underline;
+    color: saddlebrown
+    /* border-bottom: 1px solid saddlebrown; */
+}
+/* Forth Section CSS */
+.forth{
+    background-image: url("./cof-bg2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.forth h1, p{
+    margin-left:160px;
+  
+}
+.forth button{
+    width: 200px;
+height: 50px;
+color: #fff;
+background-color: saddlebrown;
+border: 1px solid saddlebrown;
+border-radius: 40px;
+}
+.forth button:hover{
+background-color: rgb(183, 95, 32);
+}
+
+/* FIFTH SECTION CSS */
+.fifth ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap:wrap ;
+list-style: none;
+
+}
+.fifth h1:hover{
+text-decoration: underline;
+}
+.fifth ul li img{
+width: 400px;
+height: 400px;
+border: 2px solid saddlebrown;
+border-radius: 10px;
+box-shadow: 0 0 10px saddlebrown;
+margin: 10px;
+}
+.fifth ul li img:hover{
+    opacity: 0.5;
+}
+.fifth h1{
+    text-align: center;
+}
+.fifth p{
+    margin-left: 340px;
+}
+ /* CSS OF SIXTH SECTION  */
+ .sixth{
+     background-color: rgb(183, 95, 32);    
+ }
+.sixth h1:hover{
+    text-decoration: underline;
+
+}
+
+/* CSS OF SEVENTH SECTION */
+.seven{
+    text-align: center;
+}
+.seven .foot{
+margin-right: 100px;
+}
+.seven .foot-line{
+    margin-left: -15px;
+}
+.seven p i:hover{
+color: saddlebrown;
+}
+
